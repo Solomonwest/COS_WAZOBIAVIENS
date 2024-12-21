@@ -1,6 +1,52 @@
 import tkinter as tk
 
-windows = tk.TK()
+windows = tk.Tk()
+
+
+espanol_dictionary = {
+    "hello":"hola",
+    "bien":"fine",
+    "goodbye":"adiós", 
+    "thank you":"gracias",
+    "please":"por favor", 
+    "yes":"sí" ,
+    "no": "no",
+    "good":"bueno",
+    "bad":"mal",
+    "love":"amot",
+    "all":"todo",
+    "very":"muy",
+    "same":"mismo", 
+    "equal":"igual",
+    "before":"antes",
+    "now":"ahora",
+    "later":"después",
+    "familia": "Family",
+    "amigo": "Friend",
+    "love":"Amor",
+    "house": "Casa",
+    "dog": "Perro",
+    "cat": "Gato",
+    "tree": "Árbol",
+    "water": "Agua",
+    "food": "Comida",
+    "book": "Libro",
+    "window": "Ventana",
+    "door": "Puerta",
+    "sky": "Cielo",
+    "sun": "Sol",
+    "moon": "Luna",
+    "star": "Estrella",
+    "table": "Mesa",
+    "chair": "Silla",
+    "shoe": "Zapato",
+    "clothes": "Ropa",
+    "street": "Calle",
+    "city": "Ciudad",
+    "country": "País",
+}
+
+
 
 igbo_dictionary = {
     "hello": "Ndewo",
