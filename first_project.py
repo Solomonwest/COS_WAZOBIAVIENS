@@ -1,7 +1,26 @@
 import tkinter as tk
 
 windows = tk.Tk()
+windows.geometry("600x600")
+windows.title("Multilingualism Dictionary")
 
+windows.columnconfigure((0,1,2,), weight=2)
+windows.rowconfigure((0,1,2,3,4,5), weight=2)
+
+yoruba_btn = tk.Button(windows, text='Yoruba Dictionary')
+yoruba_btn.grid(row=1, column=1)
+
+igbo_btn = tk.Button(windows, text='Igbo Dictionary')
+igbo_btn.grid(row=2, column=1)
+
+hausa_btn = tk.Button(windows, text='Hausa Dictionary')
+hausa_btn.grid(row=3, column=1)
+
+espanol_btn = tk.Button(windows, text= 'Espanol Dictionary')
+espanol_btn.grid(row=4, column=1)
+
+french_btn = tk.Button(windows, text= 'French Dictionary')
+french_btn.grid(row=5, column=1)
 
 espanol_dictionary = {
     "hello":"hola",
