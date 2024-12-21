@@ -7,6 +7,24 @@ windows.title("Multilingualism Dictionary")
 windows.columnconfigure((0,1,2,), weight=2)
 windows.rowconfigure((0,1,2,3,4,5), weight=2)
 
+intro = tk.Label(windows,text="WELCOME TO MULTILINGUAL DICTIONARY", font=('Arial', 15))
+intro.grid(row=0, column=1)
+
+daniel_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
+daniel_matric.grid(row=1, column=0)
+
+samuel_matric = tk.Label(windows,text="BHU/24/04/10/0029", font=('Arial', 13))
+samuel_matric.grid(row=2, column=0)
+
+aaron_matric = tk.Label(windows,text="BHU/24/04/05/0105", font=('Arial', 13))
+aaron_matric.grid(row=3, column=0)
+
+solomon_matric = tk.Label(windows,text="BHU/24/04/05/0052", font=('Arial', 13))
+solomon_matric.grid(row=4, column=0)
+
+tayo_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
+tayo_matric.grid(row=5, column=0)
+
 yoruba_btn = tk.Button(windows, text='Yoruba Dictionary')
 yoruba_btn.grid(row=1, column=1)
 
