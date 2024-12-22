@@ -72,7 +72,7 @@ def igbo_search():
     translation_label.pack(pady=10)
 
 
-    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 12))
+    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 13))
     translate_button.pack(pady=10)
 
 
