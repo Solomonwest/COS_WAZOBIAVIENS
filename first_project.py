@@ -19,6 +19,7 @@ def yoruba_search():
     yoruba_windows.title("yoruba_dictionary")
     yoruba_windows.config(background='grey')
     yoruba_windows.geometry("500x500")
+    yoruba_windows.mainloop()
 
 windows = tk.Tk()
 windows.geometry("600x600")
