@@ -1,4 +1,10 @@
 import tkinter as tk
+def Hausa_search():
+    hausa_window=tk.Toplevel()
+    hausa_window.geometry("500x500")
+    hausa_window.title("Hausa Dictionary")
+    hausa_window.config(bg="cyan")
+    hausa_window.mainloop()
 
 def espanol_search():
     espanol_window = tk.Toplevel()
@@ -19,6 +25,7 @@ def yoruba_search():
     yoruba_windows.title("yoruba_dictionary")
     yoruba_windows.config(background='grey')
     yoruba_windows.geometry("500x500")
+    yoruba_windows.mainloop()
 
 def french_search():
     french_window = tk.Toplevel()
