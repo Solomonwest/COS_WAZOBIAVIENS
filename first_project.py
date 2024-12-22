@@ -11,6 +11,21 @@ def espanol_search():
     espanol_window.geometry('500x500')
     espanol_window.title("Espanol/Spanish Dictionary")
     espanol_window.config(background='cyan')
+
+    espanol_window.config(background='#2a6356')
+
+    espanol_entry =tk.Entry(espanol_window,
+                            textvariable='enter',
+                            width=30,font=('Arial',20))
+    espanol_entry.pack()
+    espanol_search_btn= tk.Button(espanol_window,text='Search/Buscar',
+                                  width=20,
+                                  background='cyan')
+    espanol_search_btn.pack()
+    espanol_label = tk.Label(espanol_window,
+                             font=('arial',30),
+                             width=25)
+    espanol_label.pack()
     espanol_window.mainloop()
 
 def igbo_search():
