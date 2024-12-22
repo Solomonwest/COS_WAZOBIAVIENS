@@ -18,7 +18,26 @@ def igbo_search():
     igbo_window.geometry('500x500')
     igbo_window.title("Igbo Dictionary")
     igbo_window.config(background='black')
+
+
+    instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Arial', 12), bg='black', fg='white')
+    instruction_label.pack(pady=10)
+
+
+    word_entry = tk.Entry(igbo_window, font=('Arial', 12), width=25)
+    word_entry.pack(pady=10)
+
+
+    translation_label = tk.Label(igbo_window, text="", font=('Arial', 12), bg='black', fg='white')
+    translation_label.pack(pady=10)
+
+
+    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 12))
+    translate_button.pack(pady=10)
+
+
     igbo_window.mainloop()
+
 
 def yoruba_search():
     yoruba_windows = tk.Toplevel()
