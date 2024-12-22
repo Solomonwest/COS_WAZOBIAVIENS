@@ -1,5 +1,5 @@
 import tkinter as tk
-def Hausa_search():
+def hausa_search():
     hausa_window=tk.Toplevel()
     hausa_window.geometry("500x500")
     hausa_window.title("Hausa Dictionary")
@@ -70,6 +70,7 @@ igbo_btn.grid(row=2, column=1)
 
 
 hausa_btn = tk.Button(windows, text='Hausa Dictionary')
+hausa_btn.config(command=hausa_search)
 hausa_btn.grid(row=3, column=1)
 
 espanol_btn = tk.Button(windows, text= 'Espanol Dictionary')
