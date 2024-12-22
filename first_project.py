@@ -7,6 +7,13 @@ def espanol_search():
     espanol_window.config(background='cyan')
     espanol_window.mainloop()
 
+def igbo_search():
+    igbo_window = tk.Toplevel()
+    igbo_window.geometry('500x500')
+    igbo_window.title("Igbo Dictionary")
+    igbo_window.config(background='black')
+    igbo_window.mainloop()
+
 windows = tk.Tk()
 windows.geometry("600x600")
 windows.title("Multilingualism Dictionary")
@@ -36,7 +43,9 @@ yoruba_btn = tk.Button(windows, text='Yoruba Dictionary')
 yoruba_btn.grid(row=1, column=1)
 
 igbo_btn = tk.Button(windows, text='Igbo Dictionary')
+igbo_btn.config(command=igbo_search)
 igbo_btn.grid(row=2, column=1)
+
 
 hausa_btn = tk.Button(windows, text='Hausa Dictionary')
 hausa_btn.grid(row=3, column=1)
