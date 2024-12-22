@@ -20,6 +20,13 @@ def yoruba_search():
     yoruba_windows.config(background='grey')
     yoruba_windows.geometry("500x500")
 
+def french_search():
+    french_window = tk.Toplevel()
+    french_window.geometry('500x500')
+    french_window.title("french_dictionary")
+    french_window.config(background='blue')
+    french_window.mainloop()
+
 windows = tk.Tk()
 windows.geometry("600x600")
 windows.title("Multilingualism Dictionary")
@@ -42,8 +49,9 @@ aaron_matric.grid(row=3, column=0)
 solomon_matric = tk.Label(windows,text="BHU/24/04/05/0052", font=('Arial', 13))
 solomon_matric.grid(row=4, column=0)
 
-tayo_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
-tayo_matric.grid(row=5, column=0)
+
+lay2lo_matric = tk.Label(windows,text="BHU/24/04/09/0022", font=('Arial', 13))
+lay2lo_matric.grid(row=5, column=0)
 
 yoruba_btn = tk.Button(windows, text='Yoruba Dictionary')
 yoruba_btn.config(command=yoruba_search)
@@ -62,6 +70,7 @@ espanol_btn.config(command=espanol_search)
 espanol_btn.grid(row=4, column=1)
 
 french_btn = tk.Button(windows, text= 'French Dictionary')
+french_btn.config(command=french_search)
 french_btn.grid(row=5, column=1)
 
 espanol_dictionary = {
@@ -244,6 +253,27 @@ hausa={
     'Write': 'Rubutu',
     'Road': 'Hanya',
     'hunger': 'yunwa'
+}
+french_dictionary={'hello':'Bonjour',
+                   'thank you':'Merci',
+                   'goodbye':'Au revoir',
+                   'excuse me':'Excusez-moi',
+                   'house':'Maison',
+                   "school":"L'ecole",
+                   'hospital':'Hopital',
+                   'park':'Parc',
+                   'libary':'Bibliotheque',
+                   'mother':'mere',
+                   'father':'Pere',
+                   'brother':'Frere',
+                   'sister':'Soeur',
+                   'friend':'Ami',
+                   'cold':'Froid',
+                   'hot':'Chaud',
+                   'sad':'Triste',
+                   'tired':'Fatigue',
+                   'good morning':'Bonjour',
+                   'hat':'Chapeau'
 }
 
 
