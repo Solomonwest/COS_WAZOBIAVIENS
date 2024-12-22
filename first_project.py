@@ -174,33 +174,31 @@ yoruba_dictionary = {
     "Clock":'Ago',
 }
 
-
-
-
-
-Hausa={
-    'Gida': 'House',
-    'Ruwa': 'Water',
-    'Abinci': 'Food',
-    'Mutum': 'Person',
-    'Yaro': 'Boy',
-    'Yarinya': 'Girl',
-    'Kudi': 'Money',
-    'Littafi': ' Book',
-    'Makaranta': 'School',
-    'Kaya': 'Clothes',
-    'Duniya': 'World',
-    'Rana': 'Sun',
-    'Dare': 'Night',
-    'Zuciya': 'Heart',
-    'Rafi': 'River',
-    'Uba': 'Father',
-    'Yawa': 'Many',
-    'Lafiya': 'Health',
-    'Rubutu': 'Write',
-    'Hanya': 'Road',
-    'yunwa':'hunger'
+hausa={
+    'House': 'Gida',
+    'Water': 'Ruwa',
+    'Food': 'Abinci',
+    'Person': 'Mutum',
+    'Boy': 'Yaro',
+    'Girl': 'Yarinya',
+    'Money': 'Kudi',
+    ' Book': 'Littafi',
+    'School': 'Makaranta',
+    'Clothes': 'Kaya',
+    'World': 'Duniya',
+    'Sun': 'Rana',
+    'Night': 'Dare',
+    'Heart': 'Zuciya',
+    'River': 'Rafi',
+    'Father': 'Uba',
+    'Many': 'mYawa',
+    'Health': 'Lafiya',
+    'Write': 'Rubutu',
+    'Road': 'Hanya',
+    'hunger': 'yunwa'
 }
+
+
 
 
 
