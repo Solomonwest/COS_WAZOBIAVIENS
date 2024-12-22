@@ -18,7 +18,7 @@ def hausa_search():
 
 
     def search_word():
-        word = entry.get().lower()
+        word = entry.get().title()
         if word in hausa:
             result_label.config(text=f"{word} in Hausa is: {hausa[word]}")
         else:
