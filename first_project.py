@@ -84,6 +84,21 @@ def yoruba_search():
     yoruba_windows.title("yoruba_dictionary")
     yoruba_windows.config(background='grey')
     yoruba_windows.geometry("500x500")
+
+
+    yoruba_entry = tk.Entry(yoruba_windows,
+                            textvariable="ENTER",
+                            width=20, font=('Arial', 13))
+    yoruba_entry.pack(padx=10, pady=10)
+
+    yoruba_search_btn = tk.Button(yoruba_windows,
+                                  text="SEARCH",
+                                  width=20)
+    yoruba_search_btn.pack()
+
+    yoruba_label = tk.Label(yoruba_windows,
+                            height=2, width=20)
+    yoruba_label.pack(padx=10, pady=10)
     yoruba_windows.mainloop()
 
 def french_search():
