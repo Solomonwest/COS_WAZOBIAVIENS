@@ -14,6 +14,12 @@ def igbo_search():
     igbo_window.config(background='black')
     igbo_window.mainloop()
 
+def yoruba_search():
+    yoruba_windows = tk.Toplevel()
+    yoruba_windows.title("yoruba_dictionary")
+    yoruba_windows.config(background='grey')
+    yoruba_windows.geometry("500x500")
+
 windows = tk.Tk()
 windows.geometry("600x600")
 windows.title("Multilingualism Dictionary")
@@ -40,6 +46,7 @@ tayo_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
 tayo_matric.grid(row=5, column=0)
 
 yoruba_btn = tk.Button(windows, text='Yoruba Dictionary')
+yoruba_btn.config(command=yoruba_search)
 yoruba_btn.grid(row=1, column=1)
 
 igbo_btn = tk.Button(windows, text='Igbo Dictionary')
