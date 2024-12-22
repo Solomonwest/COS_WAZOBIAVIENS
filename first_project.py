@@ -64,11 +64,11 @@ def igbo_search():
     instruction_label.pack(pady=10)
 
 
-    word_entry = tk.Entry(igbo_window, font=('Arial', 12), width=25)
+    word_entry = tk.Entry(igbo_window, font=('Arial', 13), width=25)
     word_entry.pack(pady=10)
 
 
-    translation_label = tk.Label(igbo_window, text="", font=('Arial', 12), bg='black', fg='white')
+    translation_label = tk.Label(igbo_window, text="", font=('Arial', 13), bg='black', fg='white')
     translation_label.pack(pady=10)
 
 
