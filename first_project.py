@@ -64,15 +64,15 @@ def igbo_search():
     instruction_label.pack(pady=10)
 
 
-    word_entry = tk.Entry(igbo_window, font=('Arial', 12), width=25)
+    word_entry = tk.Entry(igbo_window, font=('Arial', 13), width=25)
     word_entry.pack(pady=10)
 
 
-    translation_label = tk.Label(igbo_window, text="", font=('Arial', 12), bg='black', fg='white')
+    translation_label = tk.Label(igbo_window, text="", font=('Arial', 13), bg='black', fg='white')
     translation_label.pack(pady=10)
 
 
-    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 12))
+    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 13))
     translate_button.pack(pady=10)
 
 
@@ -106,6 +106,19 @@ def french_search():
     french_window.geometry('500x500')
     french_window.title("french_dictionary")
     french_window.config(background='blue')
+
+    instruction_label = tk.Label(french_window, text="Enter an English word:", font=('Arial', 14), bg='blue', fg='grey')
+    instruction_label.pack(pady=20, padx=20)
+
+    word_entry = tk.Entry(french_window, font=('Arial', 14), width=25)
+    word_entry.pack(pady=20, padx=20)
+
+    translation_label = tk.Label(french_window, text="", font=('Arial', 14), bg='blue', fg='grey')
+    translation_label.pack(pady=20, padx=20)
+
+    translate_button = tk.Button(french_window, text="Translate", font=('Arial', 14))
+    translate_button.pack(pady=20, padx=20)
+
     french_window.mainloop()
 
 windows = tk.Tk()
