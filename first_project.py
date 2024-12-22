@@ -1,5 +1,12 @@
 import tkinter as tk
 
+def espanol_search():
+    espanol_window = tk.Toplevel()
+    espanol_window.geometry('500x500')
+    espanol_window.title("Espanol/Spanish Dictionary")
+    espanol_window.config(background='cyan')
+    espanol_window.mainloop()
+
 windows = tk.Tk()
 windows.geometry("600x600")
 windows.title("Multilingualism Dictionary")
@@ -35,6 +42,7 @@ hausa_btn = tk.Button(windows, text='Hausa Dictionary')
 hausa_btn.grid(row=3, column=1)
 
 espanol_btn = tk.Button(windows, text= 'Espanol Dictionary')
+espanol_btn.config(command=espanol_search)
 espanol_btn.grid(row=4, column=1)
 
 french_btn = tk.Button(windows, text= 'French Dictionary')
