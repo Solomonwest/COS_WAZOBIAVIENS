@@ -36,9 +36,12 @@ def espanol_search():
     espanol_window.geometry('500x500')
     espanol_window.title("Espanol/Spanish Dictionary")
     espanol_window.config(background='cyan')
-
     espanol_window.config(background='#2a6356')
 
+    espanol_intro_label = tk.Label(espanol_window, text='Type your desired entry in english')
+    espanol_intro_label.config(font=('arial',10))
+    espanol_intro_label.pack()
+    
     espanol_entry =tk.Entry(espanol_window,
                             textvariable='enter',
                             width=30,font=('Arial',20))
@@ -50,6 +53,7 @@ def espanol_search():
     espanol_label = tk.Label(espanol_window,
                              font=('arial',30),
                              width=25)
+    espanol_search_btn.config()
     espanol_label.pack()
     espanol_window.mainloop()
 
