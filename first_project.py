@@ -32,25 +32,46 @@ def hausa_search():
 
 
 def espanol_search():
+
+    def search(value):
+        if value in espanol_dictionary:
+            espanol.set(espanol_dictionary[value])
+            print(espanol_dictionary[value])
+
+        else:
+            espanol.set("Search Not Found")
+            print("Search Not Found")
+
     espanol_window = tk.Toplevel()
     espanol_window.geometry('500x500')
     espanol_window.title("Espanol/Spanish Dictionary")
-    espanol_window.config(background='cyan')
 
     espanol_window.config(background='#2a6356')
 
+    espanol_intro_label = tk.Label(espanol_window,
+                                   text='Type your desired entry in english')
+    espanol_intro_label.config(font=('Georgia',15),bg='#2a6356',fg='white')
+    espanol_intro_label.pack(pady=15)
+
     espanol_entry =tk.Entry(espanol_window,
-                            textvariable='enter',
-                            width=30,font=('Arial',20))
-    espanol_entry.pack()
-    espanol_search_btn= tk.Button(espanol_window,text='Search/Buscar',
-                                  width=20,
-                                  background='cyan')
+                            text='enter',
+                            width=30,
+                            font=('Arial',20))
+    espanol_entry.pack(pady=15)
+
+    translate = tk.PhotoImage(file='translate.png')
+    espanol_search_btn =tk.Button(espanol_window,image=translate,
+                                  bg='#2a6356',bd=0)
+    espanol_search_btn.config(command=lambda: search(espanol_entry.get().lower()))
     espanol_search_btn.pack()
-    espanol_label = tk.Label(espanol_window,
-                             font=('arial',30),
+
+    espanol = tk.StringVar()
+    espanol_label = tk.Label(espanol_window,textvariable=espanol,
+                             font=('Ink Free',30),
                              width=25)
-    espanol_label.pack()
+    espanol_label.config()
+    espanol_label.pack(pady=20)
+
     espanol_window.mainloop()
 
 def igbo_search():
