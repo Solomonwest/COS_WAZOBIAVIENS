@@ -68,15 +68,15 @@ def igbo_search():
     instruction_label.pack(pady=10)
 
 
-    word_entry = tk.Entry(igbo_window, font=('Arial', 12), width=25)
+    word_entry = tk.Entry(igbo_window, font=('Arial', 13), width=25)
     word_entry.pack(pady=10)
 
 
-    translation_label = tk.Label(igbo_window, text="", font=('Arial', 12), bg='black', fg='white')
+    translation_label = tk.Label(igbo_window, text="", font=('Arial', 13), bg='black', fg='white')
     translation_label.pack(pady=10)
 
 
-    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 12))
+    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 13))
     translate_button.pack(pady=10)
 
 
@@ -88,6 +88,21 @@ def yoruba_search():
     yoruba_windows.title("yoruba_dictionary")
     yoruba_windows.config(background='grey')
     yoruba_windows.geometry("500x500")
+
+
+    yoruba_entry = tk.Entry(yoruba_windows,
+                            textvariable="ENTER",
+                            width=20, font=('Arial', 13))
+    yoruba_entry.pack(padx=10, pady=10)
+
+    yoruba_search_btn = tk.Button(yoruba_windows,
+                                  text="SEARCH",
+                                  width=20)
+    yoruba_search_btn.pack()
+
+    yoruba_label = tk.Label(yoruba_windows,
+                            height=2, width=20)
+    yoruba_label.pack(padx=10, pady=10)
     yoruba_windows.mainloop()
 
 def french_search():
@@ -95,6 +110,19 @@ def french_search():
     french_window.geometry('500x500')
     french_window.title("french_dictionary")
     french_window.config(background='blue')
+
+    instruction_label = tk.Label(french_window, text="Enter an English word:", font=('Arial', 14), bg='blue', fg='grey')
+    instruction_label.pack(pady=20, padx=20)
+
+    word_entry = tk.Entry(french_window, font=('Arial', 14), width=25)
+    word_entry.pack(pady=20, padx=20)
+
+    translation_label = tk.Label(french_window, text="", font=('Arial', 14), bg='blue', fg='grey')
+    translation_label.pack(pady=20, padx=20)
+
+    translate_button = tk.Button(french_window, text="Translate", font=('Arial', 14))
+    translate_button.pack(pady=20, padx=20)
+
     french_window.mainloop()
 
 windows = tk.Tk()
