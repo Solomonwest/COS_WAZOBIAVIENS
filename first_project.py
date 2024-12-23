@@ -1,7 +1,5 @@
 import tkinter as tk
 
-
-
 def hausa_search():
     hausa_window = tk.Toplevel()
     hausa_window.geometry("500x500")
@@ -32,6 +30,7 @@ def hausa_search():
 
 
 def espanol_search():
+
 
     def translate(word):
         if word in espanol_dictionary:
@@ -96,26 +95,44 @@ def igbo_search():
 
 
 def yoruba_search():
+
+    def search(word):
+        if word in yoruba_dictionary:
+            yoruba.set(yoruba_dictionary[word])
+            print(yoruba_dictionary)
+        else:
+            yoruba.set("Not Found")
+            print("Not Found")
+
+
     yoruba_windows = tk.Toplevel()
     yoruba_windows.title("yoruba_dictionary")
-    yoruba_windows.config(background='grey')
+    yoruba_windows.config(background='orange')
     yoruba_windows.geometry("500x500")
+
+    yoruba_input_label = tk.Label(yoruba_windows, text="Enter an English word",
+                                  font=('Arial',13), background='white')
+    yoruba_input_label.pack(pady=10)
 
 
     yoruba_entry = tk.Entry(yoruba_windows,
-                            textvariable="ENTER",
-                            width=20, font=('Arial', 13))
-    yoruba_entry.pack(padx=10, pady=10)
+                            width=25, bd=8,
+                            font=('Arial', 13))
+    yoruba_entry.pack(pady=10)
 
     yoruba_search_btn = tk.Button(yoruba_windows,
-                                  text="SEARCH",
-                                  width=20)
-    yoruba_search_btn.pack()
+                                    text="Search/ṣàwárí",
+                                    font=('Arial',13),width=15, background='white', bd=4)
+    yoruba_search_btn.config(command=lambda: search(yoruba_entry.get().lower()))
+    yoruba_search_btn.pack(pady=10)
 
-    yoruba_label = tk.Label(yoruba_windows,
-                            height=2, width=20)
+
+    yoruba = tk.StringVar()
+    yoruba_label = tk.Label(yoruba_windows, textvariable=yoruba,
+                            font=('Arial', 15), width=25, background='white', bd=8)
     yoruba_label.pack(padx=10, pady=10)
     yoruba_windows.mainloop()
+
 
 def french_search():
     french_window = tk.Toplevel()
@@ -310,36 +327,40 @@ igbo_dictionary = {
 }
 
 yoruba_dictionary = {
-    "Stand":'Duro',
-    "Joy":'Ayo',
-    "Healthy":'Alafia',
-    "Light":'Imole',
-    "Sit":'Jokoo',
-    "Black":'Dudu',
-    "Lies":'Iro',
-    "Sickness":'Aisan',
-    "Fire":'Ina',
+    "stand":'Duro',
+    "joy":'ayọ̀',
+    "healthy":'Ìlera',
+    "light":'ìmọ́lẹ̀',
+    "sit":'Jókòó',
+    "black":'Dudu',
+    "lies":'irọ́',
+    "sickness":'àìsàn',
+    "fire":'iná',
     "world":'Aye',
-    "Earth":'Ile',
-    "Air":'Afefe',
-    "Water":'Omi',
-    "Good morning":'Ekaro',
-    "Love":'Ife',
-    "Wealth":'Ola',
-    "God":'Oluwa',
-    "Rest":'Simi',
-    "Enjoyment":'igbadun',
-    "woman":'Obirin',
-    "Come":'Wa',
-    "Child":'Omo',
-    "Man":'Okurin',
-    "Cap":'Fila',
-    "House":'Ile',
-    "Beans":'Ewa',
-    "Friend":'Ore',
-    "Festival":'Odun',
-    "Crown":'Ade',
-    "Clock":'Ago',
+    "earth":'ilẹ',
+    "air":'afẹ́fẹ́',
+    "water":'Omi',
+    "dood morning":'Kàárọ̀',
+    "love":'ìfẹ́',
+    "wealth":'ọrọ̀',
+    "god":'Ọlọ́run',
+    "rest":'Sinmi',
+    "enjoyment":'igbadun',
+    "woman":'obìnrin',
+    "come":'wá',
+    "child":'ọmọ',
+    "man":'ọkùnrin',
+    "cap":'fila',
+    "house":'Ilé',
+    "beans":'ẹ̀wà',
+    "friend":'ọ̀rẹ́',
+    "festival":'Àjọ̀dún',
+    "crown":'Ade',
+    "clock":'Aago',
+    "go": 'Lọ',
+    "eat":'jẹ',
+    "drink":'ohun mímu',
+    "heaven":'ọrun'
 }
 
 hausa={
