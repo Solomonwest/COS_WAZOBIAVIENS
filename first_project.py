@@ -102,21 +102,35 @@ def yoruba_search():
     yoruba_windows.mainloop()
 
 def french_search():
+    def translate(word):
+        if word in french_dictionary:
+            french.set(french_dictionary[word])
+            print(french_dictionary[word])
+
+        else:
+            french.set('word not found')
+            print('word not found')
+
     french_window = tk.Toplevel()
     french_window.geometry('500x500')
     french_window.title("french_dictionary")
     french_window.config(background='blue')
 
-    instruction_label = tk.Label(french_window, text="Enter an English word:", font=('Arial', 14), bg='blue', fg='grey')
+    instruction_label = tk.Label(french_window, text="Enter an English word:",font=('Arial', 14), bg='blue', fg='grey')
     instruction_label.pack(pady=20, padx=20)
 
-    word_entry = tk.Entry(french_window, font=('Arial', 14), width=25)
-    word_entry.pack(pady=20, padx=20)
+    french_entry = tk.Entry(french_window, font=('Arial', 14), width=25)
+    french_entry.pack(pady=20, padx=20)
 
-    translation_label = tk.Label(french_window, text="", font=('Arial', 14), bg='blue', fg='grey')
+    translation_label = tk.Label(french_window, text="Translation", font=('Arial', 14), bg='blue', fg='grey')
     translation_label.pack(pady=20, padx=20)
 
-    translate_button = tk.Button(french_window, text="Translate", font=('Arial', 14))
+    french = tk.StringVar()
+    french_label = tk.Label(french_window, textvariable=french, font=('Arial', 14), bg='blue', fg='grey')
+    french_label.pack(pady=20, padx=20)
+
+    translate_button = tk.Button(french_window, text="Translate", font=('Arial', 14), bg='blue', fg='grey',
+                                 command=lambda: translate(french_entry.get().lower()))
     translate_button.pack(pady=20, padx=20)
 
     french_window.mainloop()
@@ -357,7 +371,7 @@ french_dictionary={'hello':'Bonjour',
                    "school":"L'ecole",
                    'hospital':'Hopital',
                    'park':'Parc',
-                   'libary':'Bibliotheque',
+                   'library':'Bibliotheque',
                    'mother':'mere',
                    'father':'Pere',
                    'brother':'Frere',
