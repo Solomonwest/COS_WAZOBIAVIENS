@@ -41,7 +41,7 @@ def espanol_search():
     espanol_intro_label = tk.Label(espanol_window, text='Type your desired entry in english')
     espanol_intro_label.config(font=('arial',10))
     espanol_intro_label.pack()
-    
+
     espanol_entry =tk.Entry(espanol_window,
                             textvariable='enter',
                             width=30,font=('Arial',20))
@@ -133,7 +133,7 @@ windows.columnconfigure((0,1,2,), weight=2)
 windows.rowconfigure((0,1,2,3,4,5), weight=2)
 
 intro = tk.Label(windows,text="WELCOME TO MULTILINGUAL DICTIONARY", font=('Arial', 15))
-intro.grid(row=0, column=1)
+intro.grid(row=0, column=0,columnspan=3)
 
 daniel_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
 daniel_matric.grid(row=1, column=0)
