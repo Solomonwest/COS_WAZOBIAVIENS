@@ -201,24 +201,24 @@ solomon_matric.grid(row=4, column=0)
 lay2lo_matric = tk.Label(windows,text="BHU/24/04/09/0022", font=('Arial', 13))
 lay2lo_matric.grid(row=5, column=0)
 
-yoruba_btn = tk.Button(windows, text='Yoruba Dictionary')
+yoruba_btn = tk.Button(windows, text='Yoruba Dictionary', font=('Arial', 13))
 yoruba_btn.config(command=yoruba_search)
 yoruba_btn.grid(row=1, column=1)
 
-igbo_btn = tk.Button(windows, text='Igbo Dictionary')
+igbo_btn = tk.Button(windows, text='Igbo Dictionary', font=('Arial', 13))
 igbo_btn.config(command=igbo_search)
 igbo_btn.grid(row=2, column=1)
 
 
-hausa_btn = tk.Button(windows, text='Hausa Dictionary')
+hausa_btn = tk.Button(windows, text='Hausa Dictionary', font=('Arial', 13))
 hausa_btn.config(command=hausa_search)
 hausa_btn.grid(row=3, column=1)
 
-espanol_btn = tk.Button(windows, text= 'Espanol Dictionary')
+espanol_btn = tk.Button(windows, text= 'Espanol Dictionary', font=('Arial', 13))
 espanol_btn.config(command=espanol_search)
 espanol_btn.grid(row=4, column=1)
 
-french_btn = tk.Button(windows, text= 'French Dictionary')
+french_btn = tk.Button(windows, text= 'French Dictionary', font=('Arial', 13))
 french_btn.config(command=french_search)
 french_btn.grid(row=5, column=1)
 
