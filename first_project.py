@@ -78,7 +78,7 @@ def igbo_search():
     igbo_window = tk.Toplevel()
     igbo_window.geometry('500x500')
     igbo_window.title("Igbo Dictionary")
-    igbo_window.config(background='black')
+    igbo_window.config()
 
 
     instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Arial', 12), bg='black', fg='white')
@@ -173,12 +173,17 @@ def french_search():
 windows = tk.Tk()
 windows.geometry("600x600")
 windows.title("Multilingualism Dictionary")
+windows.config()
+
+bg = tk.PhotoImage(file='COS101.png')
+window_display =tk.Label(windows, image=bg)
+window_display.place(x=0,y=0,relheight=1,relwidth=1)
 
 windows.columnconfigure((0,1,2,), weight=2)
 windows.rowconfigure((0,1,2,3,4,5), weight=2)
 
-intro = tk.Label(windows,text="WELCOME TO MULTILINGUAL DICTIONARY", font=('Arial', 15))
-intro.grid(row=0, column=1)
+intro = tk.Label(windows,text="WELCOME TO THE MULTILINGUAL DICTIONARY", font=('Arial', 15))
+intro.grid(row=0, column=0, columnspan=2)
 
 daniel_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
 daniel_matric.grid(row=1, column=0)
