@@ -78,7 +78,7 @@ def igbo_search():
     igbo_window = tk.Toplevel()
     igbo_window.geometry('500x500')
     igbo_window.title("Igbo Dictionary")
-    igbo_window.config()
+    igbo_window.config(background='black')
 
 
     instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Arial', 12), bg='black', fg='white')
