@@ -61,7 +61,7 @@ def espanol_search():
 
     translate = tk.PhotoImage(file='translate.png')
     espanol_search_btn =tk.Button(espanol_window,image=translate,
-                                  bg='#2a6356',bd=0)
+                                  bg='#2a6356',bd=0,activebackground='#228ed1')
     espanol_search_btn.config(command=lambda: search(espanol_entry.get().lower()))
     espanol_search_btn.pack()
 
