@@ -174,6 +174,7 @@ windows = tk.Tk()
 windows.geometry("600x600")
 windows.title("Multilingualism Dictionary")
 windows.config()
+windows.resizable(False,False)
 
 bg = tk.PhotoImage(file='COS101.png')
 window_display =tk.Label(windows, image=bg)
@@ -224,7 +225,7 @@ french_btn.grid(row=5, column=1)
 
 espanol_dictionary = {
     "hello":"hola",
-    "bien":"fine",
+    "fine":"bien",
     "goodbye":"adiós", 
     "thank you":"gracias",
     "please":"por favor", 
