@@ -94,7 +94,7 @@ def igbo_search():
     igbo_word_entry = tk.Entry(igbo_window, font=('Garamond', 16), width=25)
     igbo_word_entry.pack(pady=10)
 
-    igbo_translation_label = tk.Label(igbo_window, text="", font=('Baskerville', 16), bg='black', fg='white')
+    igbo_translation_label = tk.Label(igbo_window, text="", font=('Baskerville', 16), bg='black', fg='black')
     igbo_translation_label.pack(pady=10)
 
     igbo_translate_button = tk.Button(igbo_window, text="Translate", font=('Garamond', 16), command=lambda: igbo_search_word(igbo_word_entry.get().lower()))
