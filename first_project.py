@@ -88,16 +88,16 @@ def igbo_search():
             igbo_translation_label.config(text=" word not found in dictionary.")
 
 
-    igbo_instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Arial', 12), bg='black', fg='white')
+    igbo_instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Garamond', 15), bg='black', fg='white')
     igbo_instruction_label.pack(pady=10)
 
-    igbo_word_entry = tk.Entry(igbo_window, font=('Arial', 13), width=25)
+    igbo_word_entry = tk.Entry(igbo_window, font=('Garamond', 16), width=25)
     igbo_word_entry.pack(pady=10)
 
-    igbo_translation_label = tk.Label(igbo_window, text="", font=('Arial', 13), bg='black', fg='white')
+    igbo_translation_label = tk.Label(igbo_window, text="", font=('Baskerville', 16), bg='black', fg='white')
     igbo_translation_label.pack(pady=10)
 
-    igbo_translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 13), command=lambda: igbo_search_word(igbo_word_entry.get().lower()))
+    igbo_translate_button = tk.Button(igbo_window, text="Translate", font=('Garamond', 16), command=lambda: igbo_search_word(igbo_word_entry.get().lower()))
     igbo_translate_button.pack(pady=10)
 
     igbo_window.mainloop()
@@ -348,8 +348,35 @@ igbo_dictionary = {
     "sorrow": "Ichefu",
     "family": "Ụgbọ",
     "friendship": "Enyi",
-    "hope": "Olileanya"
+    "hope": "Olileanya",
+    "truth": "Eziokwu",
+    "lie": "Ịgha",
+    "beautiful": "Mma",
+    "strong": "Ike",
+    "big": "Ọtụtụ",
+    "small": "Ntẹ",
+    "clean": "Ịcha",
+    "dirty": "Nkọrọ",
+    "hot": "Okpomọkụ",
+    "cold": "Oyi",
+    "happy": "Anwụ",
+    "sad": "Ụjọ",
+    "tall": "Elu",
+    "short": "Ntanye",
+    "wide": "Gbagọrọ",
+    "narrow": "Ọkpụkpụ",
+    "light": "Ìhè",
+    "dark": "Ụtụtụ",
+    "sharp": "Ọkpụkpụ",
+    "dull": "Ọkpụkpọ",
+    "young": "Ntoro",
+    "old": "Okenye",
+    "quick": "Ọsọ",
+    "slow": "Nkọda",
+    "clear": "Ihie",
+    "cloudy": "Iwu"
 }
+
 
 yoruba_dictionary = {
     "stand": 'Duro',
