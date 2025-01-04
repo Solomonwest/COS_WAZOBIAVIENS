@@ -80,22 +80,25 @@ def igbo_search():
     igbo_window.title("Igbo Dictionary")
     igbo_window.config(background='black')
 
-
-    instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Arial', 12), bg='black', fg='white')
-    instruction_label.pack(pady=10)
-
-
-    word_entry = tk.Entry(igbo_window, font=('Arial', 13), width=25)
-    word_entry.pack(pady=10)
-
-
-    translation_label = tk.Label(igbo_window, text="", font=('Arial', 13), bg='black', fg='white')
-    translation_label.pack(pady=10)
+    def igbo_search_word(igbo_word):
+        if igbo_word in igbo_dictionary:
+            igbo_translation_label.config(text=igbo_dictionary[igbo_word])
+            print(igbo_dictionary[igbo_word])
+        else:
+            igbo_translation_label.config(text=" word not found in dictionary.")
 
 
-    translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 13))
-    translate_button.pack(pady=10)
+    igbo_instruction_label = tk.Label(igbo_window, text="Enter an English word:", font=('Arial', 12), bg='black', fg='white')
+    igbo_instruction_label.pack(pady=10)
 
+    igbo_word_entry = tk.Entry(igbo_window, font=('Arial', 13), width=25)
+    igbo_word_entry.pack(pady=10)
+
+    igbo_translation_label = tk.Label(igbo_window, text="", font=('Arial', 13), bg='black', fg='white')
+    igbo_translation_label.pack(pady=10)
+
+    igbo_translate_button = tk.Button(igbo_window, text="Translate", font=('Arial', 13), command=lambda: igbo_search_word(igbo_word_entry.get().lower()))
+    igbo_translate_button.pack(pady=10)
 
     igbo_window.mainloop()
 
