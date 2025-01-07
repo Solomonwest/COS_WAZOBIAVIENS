@@ -436,7 +436,8 @@ hausa={
     'Health': 'Lafiya',
     'Write': 'Rubutu',
     'Road': 'Hanya',
-    'hunger': 'yunwa'
+    'hunger': 'yunwa',
+    'sweet':'dadi'
 }
 french_dictionary={'hello':'Bonjour',
                    'thank you':'Merci',
