@@ -187,7 +187,8 @@ windows.columnconfigure((0,1,2,), weight=2)
 windows.rowconfigure((0,1,2,3,4,5), weight=2)
 
 intro = tk.Label(windows,text="WELCOME TO THE MULTILINGUAL DICTIONARY", font=('Arial', 15))
-intro.grid(row=0, column=0, columnspan=2)
+intro.config()
+intro.grid(row=0, column=0, columnspan=2, pady=1)
 
 daniel_matric = tk.Label(windows,text="BHU/24/04/10/0001", font=('Arial', 13))
 daniel_matric.grid(row=1, column=0)
@@ -250,7 +251,6 @@ espanol_dictionary = {
     "house": "Casa",
     "dog": "Perro",
     "cat": "Gato",
-    "tree": "Árbol",
     "water": "Agua",
     "food": "Comida",
     "book": "Libro",
@@ -267,6 +267,25 @@ espanol_dictionary = {
     "street": "Calle",
     "city": "Ciudad",
     "country": "País",
+    "car": "coche",
+    "tree": "árbol",
+    "door": "puerta",
+    "pen": "bolígrafo",
+    "paper": "papel",
+    "city": "ciudad",
+    "country": "país",
+    "mountain": "montaña",
+    "river": "río",
+    "flower": "flor",
+    "garden": "jardín",
+    "bridge": "puente",
+    "forest": "bosque",
+    "island": "isla",
+    "road": "camino",
+    "music": "música",
+    "movie": "película",
+    "good morning": "Buenos días",
+    "welcome": "Bienvenido",
 }
 
 
