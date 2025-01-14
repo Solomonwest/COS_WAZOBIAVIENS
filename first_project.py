@@ -1,34 +1,38 @@
 import tkinter as tk
 
-
-
 def hausa_search():
     hausa_window = tk.Toplevel()
     hausa_window.geometry("500x500")
     hausa_window.title("Hausa Dictionary")
     hausa_window.config(bg="blue")
-
-
-    label = tk.Label(hausa_window, text="Enter word in English:", font=('Arial', 12))
+    label = tk.Label(
+        hausa_window,
+        text="Enter a word in English",
+        font=('Arial', 12),
+        bg="blue",
+        fg="white"
+    )
     label.pack(pady=10)
-
-
     entry = tk.Entry(hausa_window, font=('Arial', 12))
     entry.pack(pady=10)
 
-
     def search_word():
-        word = entry.get().title()
+        word = entry.get()
         if word in hausa:
-            result_label.config(text=f"{word} in Hausa is: {hausa[word]}")
+            result_label.config(text=f"'{word}' in Hausa is: {hausa[word]}")
         else:
-            result_label.config(text="Word not found in the dictionary.")
-
-    search_btn = tk.Button(hausa_window, text="Search", command=search_word, font=('Arial', 12))
+            result_label.config(text=f"'{word}' not found in the dictionary.")
+    search_btn = tk.Button(
+        hausa_window,
+        text="Search", command=search_word, font=('Arial', 12), bg="white", fg="blue"
+    )
     search_btn.pack(pady=10)
 
-    result_label = tk.Label(hausa_window, text="", font=('Arial', 12))
+    result_label = tk.Label(
+        hausa_window, text="", font=('Arial', 12), bg="blue", fg="white"
+    )
     result_label.pack(pady=10)
+
 
 
 def espanol_search():
