@@ -433,8 +433,7 @@ yoruba_dictionary = {
     "drink": 'ohun mímu',
     "heaven": 'ọrun'
 }
-
-hausa={
+hausa = {
     'House': 'Gida',
     'Water': 'Ruwa',
     'Food': 'Abinci',
@@ -442,7 +441,7 @@ hausa={
     'Boy': 'Yaro',
     'Girl': 'Yarinya',
     'Money': 'Kudi',
-    ' Book': 'Littafi',
+    'Book': 'Littafi',
     'School': 'Makaranta',
     'Clothes': 'Kaya',
     'World': 'Duniya',
@@ -451,16 +450,46 @@ hausa={
     'Heart': 'Zuciya',
     'River': 'Rafi',
     'Father': 'Uba',
-    'Many': 'mYawa',
-    'HealtH': 'Lafiya',
+    'Many': 'Yawa',
+    'Health': 'Lafiya',
     'Write': 'Rubutu',
     'Road': 'Hanya',
-    'hunger': 'yunwa',
-    'sweet':'dadi',
-    'mounth':'baki',
-    'hanu':'hand'
-
+    'Hunger': 'Yunwa',
+    'Sweet': 'Dadi',
+    'Mouth': 'Baki',
+    'Hand': 'Hannu',
+    'Friend': 'Aboki',
+    'Love': 'Soyayya',
+    'Happiness': 'Farinciki',
+    'Rain': 'Ruwa',
+    'Stone': 'Dutse',
+    'Sky': 'Sama',
+    'Tree': 'Itace',
+    'Animal': 'Dabba',
+    'Child': 'Yaro/Yarinya',
+    'Fish': 'Kifi',
+    'Market': 'Kasuwa',
+    'Work': 'Aiki',
+    'Play': 'Wasa',
+    'King': 'Sarki',
+    'Queen': 'Sarauniya',
+    'Horse': 'Doki',
+    'Goat': 'Akuya',
+    'Cow': 'Shanu',
+    'Milk': 'Nono',
+    'Bread': 'Burodi',
+    'Chair': 'Kujera',
+    'Table': 'Tebur',
+    'Window': 'Tagar',
+    'Door': 'Kofa',
+    'Garden': 'Lambu',
+    'Voice': 'Murya',
+    'Time': 'Lokaci',
+    'Story': 'Labari',
+    'Peace': 'Zaman lafiya'
 }
+
+
 french_dictionary={'hello':'Bonjour',
                    'thank you':'Merci',
                    'goodbye':'Au revoir',
