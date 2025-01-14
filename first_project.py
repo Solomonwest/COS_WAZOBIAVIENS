@@ -452,7 +452,7 @@ hausa={
     'River': 'Rafi',
     'Father': 'Uba',
     'Many': 'mYawa',
-    'Health': 'Lafiya',
+    'HealtH': 'Lafiya',
     'Write': 'Rubutu',
     'Road': 'Hanya',
     'hunger': 'yunwa',
