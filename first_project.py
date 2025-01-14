@@ -456,6 +456,7 @@ hausa={
     'Write': 'Rubutu',
     'Road': 'Hanya',
     'hunger': 'yunwa',
+    'sweet':'dadi'
 
 }
 french_dictionary={'hello':'Bonjour',
