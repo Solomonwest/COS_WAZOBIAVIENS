@@ -457,7 +457,8 @@ hausa={
     'Road': 'Hanya',
     'hunger': 'yunwa',
     'sweet':'dadi',
-    'mounth':'baki'
+    'mounth':'baki',
+    'hanu':'hand'
 
 }
 french_dictionary={'hello':'Bonjour',
