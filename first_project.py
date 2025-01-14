@@ -58,7 +58,7 @@ def espanol_search():
     espanol_intro_label.pack(pady=15)
 
     espanol_entry =tk.Entry(espanol_window,
-                            text='enter',
+                            text =' Enter',
                             width=30,
                             font=('Arial',20))
     espanol_entry.pack(pady=15)
@@ -241,7 +241,7 @@ espanol_dictionary = {
     "no": "no",
     "good":"bueno",
     "bad":"mal",
-    "love":"amot",
+    " love":"amot",
     "all":"todo",
     "very":"muy",
     "same":"mismo", 
@@ -269,11 +269,11 @@ espanol_dictionary = {
     "shoe": "Zapato",
     "clothes": "Ropa",
     "street": "Calle",
-    "city": "Ciudad",
-    "country": "País",
+    " city": "Ciudad",
+    " country": "País",
     "car": "coche",
     "tree": "árbol",
-    "door": "puerta",
+    " door": "puerta",
     "pen": "bolígrafo",
     "paper": "papel",
     "city": "ciudad",
